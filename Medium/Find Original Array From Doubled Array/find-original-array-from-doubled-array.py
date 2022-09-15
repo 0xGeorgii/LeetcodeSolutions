@@ -1,7 +1,7 @@
 class Solution:
     def findOriginalArray(self, changed: List[int]) -> List[int]:
 
-        if len(changed) == 1 or len(changed) % 2 != 0:
+        if len(changed) % 2 != 0:
             return []
 
         data = defaultdict(int)
