@@ -18,4 +18,4 @@ You are given a string dominoes representing the initial state where:
 
 Return a string representing the final state.
 
-https://s3-lc-upload.s3.amazonaws.com/uploads/2018/05/18/domino.png![image](https://user-images.githubusercontent.com/22812032/192456063-b7e668a9-9bb7-43cc-8d8f-31c13213f469.png)
+![image](https://user-images.githubusercontent.com/22812032/192456063-b7e668a9-9bb7-43cc-8d8f-31c13213f469.png)
