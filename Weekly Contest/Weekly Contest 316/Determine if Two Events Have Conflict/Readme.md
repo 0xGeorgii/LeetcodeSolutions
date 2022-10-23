@@ -1,5 +1,7 @@
 # Determine if Two Events Have Conflict
 
+https://leetcode.com/contest/weekly-contest-316/problems/determine-if-two-events-have-conflict/
+
 You are given two arrays of strings that represent two inclusive events that happened **on the same day**, `event1` and `event2`, where:
 
 - `event1 = [startTime1, endTime1]` and
