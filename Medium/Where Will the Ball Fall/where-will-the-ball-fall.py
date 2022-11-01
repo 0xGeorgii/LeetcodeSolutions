@@ -21,7 +21,7 @@ class Solution:
                 
                 if grid[row][curr_col] != grid[row][next_col]:
                     stucked = True
-                    breaka
+                    break
                 
             res.append(next_col if not stucked else -1)
 
