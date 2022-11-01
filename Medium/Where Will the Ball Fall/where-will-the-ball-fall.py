@@ -4,25 +4,24 @@ class Solution:
         res = []
         
         for col in range(len(grid[0])):
-            next_col = col
             stucked = False
             for row in range(len(grid)):
                 
                 if (
-                    next_col == 0 and grid[row][next_col] == -1
+                    col == 0 and grid[row][col] == -1
                 ) or (
-                    next_col == len(grid[0]) - 1 and grid[row][next_col] == 1
+                    col == len(grid[0]) - 1 and grid[row][col] == 1
                 ):
                     stucked = True
                     break
                     
-                curr_col = next_col
-                next_col += grid[row][next_col]
+                curr_col = col
+                col += grid[row][col]
                 
-                if grid[row][curr_col] != grid[row][next_col]:
+                if grid[row][curr_col] != grid[row][col]:
                     stucked = True
                     break
                 
-            res.append(next_col if not stucked else -1)
+            res.append(col if not stucked else -1)
 
         return res
