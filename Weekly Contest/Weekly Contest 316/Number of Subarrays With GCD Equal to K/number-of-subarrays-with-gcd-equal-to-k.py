@@ -1,5 +1,16 @@
 class Solution:
     def subarrayGCD(self, nums: List[int], k: int) -> int:
+        res = 0
+        for i in range(len(nums)):
+            g = nums[i]
+            for j in range(i, len(nums)):
+                g = math.gcd(g, nums[j])
+                if g == k:
+                    res += 1
+        
+        return res
+
+    def _subarrayGCD(self, nums: List[int], k: int) -> int:
                 
         res = 0
         start = -1
